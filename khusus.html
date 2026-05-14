@@ -1,0 +1,336 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHUSUS UNTUK PRINCES AKU❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f0f0f, #1d1d1d);
+      color: white;
+    }
+
+    /* Container Utama */
+    .container {
+      position: relative;
+      width: 350px;
+      padding: 30px;
+      border-radius: 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 40px rgb(0, 140, 255);
+      z-index: 10;
+      animation: muncul 1.2s ease;
+    }
+
+    @keyframes muncul {
+      from { opacity: 0; transform: scale(0.7); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 { color: #4d97ff; margin-bottom: 20px; font-size: 28px; }
+
+    .foto {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #1b60ec;
+      margin-bottom: 20px;
+      object-fit: cover;
+      animation: putar 10s linear infinite;
+    }
+
+    @keyframes putar { 100% { transform: rotate(360deg); } }
+
+    p { line-height: 1.6; color: #eee; margin-bottom: 25px; }
+
+    button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 50px;
+      background: #4d82ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(77, 148, 255, 0.4);
+    }
+
+    button:hover { transform: scale(1.1); background: #006aff; }
+
+    /* Floating Hearts Background */
+    .love {
+      position: absolute;
+      color: #4d9dff;
+      animation: turun linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes turun {
+      0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+      20% { opacity: 0.8; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* Pages */
+    .page {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 100;
+    }
+
+    .foto-page {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 3px solid #4da9ff86;
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px rgba(0, 110, 255, 0.281);
+    }
+
+    /* Text Musik / Lirik */
+    #lirik-musik {
+      position: fixed;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+      font-style: italic;
+      color: #ffb3d9;
+      text-shadow: 0 0 10px rgba(255, 77, 166, 0.8);
+      font-size: 14px;
+      z-index: 200;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Musik (Ganti link src dengan lagu favorit kalian) -->
+  <audio id="lagu" loop>
+    <source src="lagu1.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Lirik Box -->
+  <div id="lirik-musik"></div>
+
+  <!-- Halaman Awal -->
+  <div class="container" id="main-container">
+    <img src="codingle.jpeg" class="foto-page">
+    <h1>Hai Sayang🩵🤍</h1>
+    <p> codingan ini aku buat khusus buat kamu,semoga kamu sukaa yaaa..
+      pencet tombol di bawah yaaa....
+      
+
+    </p>
+    <button onclick="mulai()">Masuk Sayang 💖</button>
+  </div>
+
+  <!-- Halaman-Halaman -->
+  <div id="halaman2" class="page">
+    <img src="pricesku.jpeg" class="foto-page">
+    <h1>A Little Secret ❤️</h1>
+    <p>Kamu tau gakk? Setiap hari aku makinn sayangg samaa kamuuu
+      Aku janji bakal terus berusaha bikin kamu bahagia, bukan cuma lewat kata-kata,
+       tapi lewat pembuktian di setiap langkah kita ke depan. Makasih ya sayang sudah 
+       jadi alasan aku
+        buat bangun dengan semangat dan terus berjuang setiap hari.
+       Di mata aku, kamu adaa lahh  segalanya bagii akuu kamu adalah tujuan. 
+       Makasih sudah mau sabar menghadapi egoku dan tetap memilih bertahan di saat semuanya terasa sulit.
+       Aku nggak butuh seseorang yang dipuja dunia, aku cuma butuh kamu yang tulus memegang tanganku. Mari kita
+        jalanin ini sama-sama, hadapi dunia bareng-bareng, dan buktikan kalau selamanya itu benar-benar ada. I love you, 
+        now and always
+    
+    
+    </p>
+    <button onclick="nextPage(3)">Lanjut ➜</button>
+  </div>
+
+  <div id="halaman3" class="page">
+    <img src="princesku1.jpeg" class="foto-page">
+    <h1>THE BEST PART OF ME ❤️</h1>
+    <p>
+    Kamu adalah bagian terbaik dalam hidupku. Makasih ya sudah
+     hadir dan nggak pernah pergi meskipun aku banyak kurangnya.
+      Janji ya, kita bakal terus begini selamaa nyaa 
+      Makasih sudah mau menerima aku apa adanya dan tetap sabar di setiap langkahku.
+       Aku nggak butuh seseorang yang sempurna, aku cuma butuh kamu untuk terus ada di sampingku.
+        Mari kita lalui setiap suka dan duka sama-sama, karena bagi aku, selama ada kamu, semuanya akan 
+        baik-baik saja. Janji ya, kita bakal terus begini dan berjuang bareng selamanya
+      
+      😊</p>
+    <button onclick="nextPage(4)">Lanjut ➜</button>
+  </div>
+
+  <div id="halaman4" class="page">
+    <img src="princesku3.jpeg" class="foto-page">
+    <h1> The future looks Bright With you❤️</h1>
+    <p>Aku janji bakal terus usaha buat bikin kamu bahagia.
+       🥰
+        Aku nggak bisa janji untuk selalu sempurna, tapi aku janji akan selalu berusaha menjadi yang terbaik untuk kamu.
+          Aku ingin kita terus tumbuh bersama, belajar dari setiap pengalaman, dan menghadapi masa depan dengan penuh semangat dan cinta.
+          Dengan kamu di sisiku, aku yakin masa depan kita akan cerah dan penuh kebahagiaan. 
+          Terima kasih sudah menjadi bagian dari hidupku, aku nggak sabar untuk melihat apa yang akan kita capai bersama di masa depan.
+    </p>
+    <button onclick="nextPage(5)">Lanjut ➜ ➜</button>
+    </div>
+
+  <div id="halaman5" class="page">
+    <img src="princesku4.jpeg" class="foto-page">
+    <h1 style="font-size: 40px;">🩵🤍</h1>
+    <p>kamuuu tauu gaak?Langit ajaa indahh pas senja,apa lagi hidup 
+      aku kalau ada kamuu. 💖</p>
+    <button onclick="nextPage(6)">Terakhir... ✨</button>
+   </div>
+
+   <div id="halaman6" class="page">
+    <video class="foto-page" autoplay muted loop playsinline>
+  <source src="video1.mp4" type="video/mp4">
+  Browser kamu tidak mendukung video.
+</video>
+    <h1 style="font-size: 40px;">🩵🤍</h1>
+    <p>kamuu tauu gakk? Air laut aja luas,tapi rasa sayang akuu
+      ke kamuu lebihh luass. 💖</p>
+    <button onclick="nextPage(7)">pencet 1 kalii lagii✨</button>
+   </div>
+
+    <div id="halaman7" class="page">
+    <h1 style="font-size: 40px;">I LOVE YOUU MOREE ❤️</h1>
+    <p>Selamanya sama kamu ya? No matter what. 💖 
+      KAMU ADALAH SEGALANYA BAGI AKU,AKUU INGIN SELALU ADA 
+      DI SAMPING KAMUU,KALOO ADAA MASALAH KAMU BISA CERITAA SAMA AKUU,
+      AKU JANJI BAKAL SELALU ADA BUAT KAMUU,AKU JANJI BAKAL SELALU JAGA KAMUU,
+      AKU JANJI BAKAL SELALU SAYANG SAMA KAMUU,AKU JANJI BAKAL SELALU CINTA SAMA KAMUU
+      SEMOGA KITA SELALU BERSAMA SAMPAI NANTI YAA. 
+      I LOVE YOUUUU MOREEE ! 💖
+     </p>
+     <button onclick="nextPage(8)">masih adaa lagii dong 
+      pencet lagi ya ✨</button>
+     </div>
+
+      <div id="halaman8" class="page">
+     <h1 style="font-size: 40px;">I LOVE YOUU MOREE ❤️</h1>
+     <p>Semangattt selaluuu pesantrennnyaa, jangann lupaainn akuu yaaa dann 
+      jangann pernahh bosenn samaa akuu yaaa, aku janji bakal terus usaha buat bikin kamu bahagia. 🥰
+      disiniii akuuu sealuu menungguu kamuuu,semogaa kamuu sehatt selalu
+      dan selalu bahagiaa
+     </p>
+    <button onclick="reset()">Ulangi dari Awal? ✨</button>
+   
+  </div>
+
+   <script>
+    const lagu = document.getElementById("lagu");
+    const lirikBox = document.getElementById("lirik-musik");
+
+    // Daftar Lirik (Bisa kamu sesuaikan dengan durasi lagu)
+    const lirik = [
+      " Aku ingin jadi teman nyamanmu...",
+       "tempat kau hilangkan keluh kesahmu...",
+       "Kita berbincang tak karuan, tanpa beban...",
+        "Dan juga khayalan tentang masa depan....",
+        " Ku tak ingin cepat berlalu (berlalu)....",
+        "Waktu yang kupunya denganmu...",
+      "Kita berdansa dan tertawa, gandeng tangan...",
+       "Semoga bergema sampai selamanya...",
+       "Dunia pasti ada akhirnya...",
+        "Bintang-bintang pun ada umurnya..",
+        "Maka tenang saja, kita di sini berdua",
+        "Nikmati sementara yang ada",
+        ".............................",
+        ".............................",
+        "Bersandar padaku, taruh di bahuku",
+        "Relakan semua, bebas semaumu",
+       "Percayalah, ini sayang terlewatkan",
+       "Kusampaikan dalam nyanyian, bergema sampai selamanya",
+       "................",
+       "................",
+       "................",
+       "................",
+        "Dunia pasti ada akhirnya",
+        "Bintang-bintang pun ada umurnya",
+        "Maka tenang saja, kita di sini berdua",
+        "Nikmati sementara yang ada...",
+        "dunia pasti ada akhirnya",
+        "bintang-bintang pun ada umurnya",
+        "maka tenang saja,kita disini berduaa",      
+        "nikmati sementara yang ada",
+          ".........",
+
+
+       "Semoga bergema selamanya..."
+
+
+
+
+
+  ];
+
+    let lirikIndex = 0;
+
+    function gantiLirik() {
+      lirikBox.style.opacity = 0;
+      setTimeout(() => {
+        lirikBox.innerHTML = lirik[lirikIndex];
+        lirikBox.style.opacity = 1;
+        lirikIndex = (lirikIndex + 1) % lirik.length;
+      }, 500);
+    }
+
+    function mulai() {
+      document.getElementById("main-container").style.display = "none";
+      nextPage(2);
+      lagu.play();
+      lagu.volume = 0.6;
+      setInterval(gantiLirik, 5870); // Ganti teks tiap 5.8,7 detik
+    }
+
+    function nextPage(page) {
+      document.querySelectorAll(".page").forEach(el => el.style.display = "none");
+      document.getElementById("halaman" + page).style.display = "flex";
+    }
+
+    function reset() {
+      location.reload();
+    }
+
+    // Efek Hujan Hati
+    function createHearts() {
+      for (let i = 0; i < 50; i++) {
+        let love = document.createElement("div");
+        love.innerHTML = "❤";
+        love.classList.add("love");
+        love.style.left = Math.random() * 100 + "vw";
+        love.style.fontSize = (Math.random() * 20 + 10) + "px";
+        love.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        love.style.delay = Math.random() * 5 + "s";
+        document.body.appendChild(love);
+      }
+    }
+    createHearts();
+  </script>
+</body>
+</html>
